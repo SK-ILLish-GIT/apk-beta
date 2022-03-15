@@ -1,0 +1,28 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  align-items: center;
+  h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+  }
+  span {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+}
+
+.about {
+  width: 50%;
+  margin-left: 4rem;
+  h1 {
+    font-size: $heading-text;
+    margin: 3rem 0;
+  }
+  p {
+    font-size: $body-text;
+    line-height: 1.3rem;
+  }
+}
