@@ -540,6 +540,7 @@ section {
   width: 50%;
 }
 
+<<<<<<< HEAD
 /* Css for Events from line 543 to 637 .. Himanshu Shekhar */
 
 /* Slideshow container */
@@ -646,4 +647,18 @@ section {
 }
 
 
+=======
+.no-select{
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.fnt-sm{
+  font-size: 0.1em;
+}
+>>>>>>> 194cec1d523f255f46e771dbd467b9d8b0dba0c9
 /*# sourceMappingURL=main.css.map */
