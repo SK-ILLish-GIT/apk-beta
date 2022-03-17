@@ -2,22 +2,30 @@ var slideIndex = 0;
 var slides = document.getElementsByClassName("mySlides");  
 var plushBtn = document.getElementById("plusSlides"); 
 var subBtn = document.getElementById("subSlides"); 
-plushBtn.addEventListener("click",plusSlides);
-subBtn.addEventListener("click",subSlides);
+
+if(plushBtn!==null){
+    plushBtn.addEventListener("click",plusSlides);
+    subBtn.addEventListener("click",subSlides);
+}
 
 var slideIndex2 = 0; 
 var slides2 = document.getElementsByClassName("mySlides2");  
 var plushBtn2 = document.getElementById("plusSlides2"); 
 var subBtn2 = document.getElementById("subSlides2"); 
-plushBtn2.addEventListener("click",plusSlides2);
-subBtn2.addEventListener("click",subSlides2);
+
+if(plushBtn2!==null){
+    plushBtn2.addEventListener("click",plusSlides2);
+    subBtn2.addEventListener("click",subSlides2);
+}
 
 var slideIndex3 = 0; 
 var slides3 = document.getElementsByClassName("mySlides3");  
 var plushBtn3 = document.getElementById("plusSlides3"); 
 var subBtn3 = document.getElementById("subSlides3"); 
-plushBtn3.addEventListener("click",plusSlides3);
-subBtn3.addEventListener("click",subSlides3);
+if(plushBtn3!==null){
+    plushBtn3.addEventListener("click",plusSlides3);
+    subBtn3.addEventListener("click",subSlides3);
+}
 
 showSlides();
 showSlides2();
