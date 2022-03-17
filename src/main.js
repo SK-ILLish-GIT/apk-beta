@@ -3,6 +3,7 @@ import "./barba";
 import "./menu";
 import "./app";
 import "./timer";
+import "./events"
 function main() {
   // Get a reference to the container element
   const container = document.querySelector("#scene-container");
