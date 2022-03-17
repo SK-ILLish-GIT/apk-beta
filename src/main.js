@@ -2,6 +2,7 @@ import { World } from "./World/World.js";
 import "./barba";
 import "./menu";
 import "./app";
+import "./timer";
 function main() {
   // Get a reference to the container element
   const container = document.querySelector("#scene-container");

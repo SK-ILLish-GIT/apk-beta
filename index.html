@@ -20,43 +20,59 @@
     />
     <script type="module" src="./src/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
     <script defer>
-      function makeTimer() {
-        // var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
-        // var endTime = new Date("29 April 2020 9:56:00 GMT+01:00");
-        var endTime = new Date("20 April 2022 00:00:00");
-        endTime = Date.parse(endTime) / 1000;
-        var now = new Date();
-        now = Date.parse(now) / 1000;
-        var timeLeft = endTime - now;
-        var days = Math.floor(timeLeft / 86400);
-        var hours = Math.floor((timeLeft - days * 86400) / 3600);
-        var minutes = Math.floor((timeLeft - days * 86400 - hours * 3600) / 60);
-        var seconds = Math.floor(
-          timeLeft - days * 86400 - hours * 3600 - minutes * 60
-        );
-        if (hours < "10") {
-          hours = "0" + hours;
-        }
-        if (minutes < "10") {
-          minutes = "0" + minutes;
-        }
-        if (seconds < "10") {
-          seconds = "0" + seconds;
-        }
-        $("#days").html(days + '<span style="font-size:0.5em;">Days</span>');
-        $("#hours").html(hours + '<span style="font-size:0.5em;">Hours</span>');
-        $("#minutes").html(
-          minutes + '<span  style="font-size:0.5em;">Minutes</span>'
-        );
-        $("#seconds").html(
-          seconds + '<span style="font-size:0.5em;">Seconds</span>'
-        );
-      }
-      setInterval(function () {
-        makeTimer();
-      }, 1000);
+        document.addEventListener('DOMContentLoaded', 
+    function(){
+      Typed.new('.entry', {
+        strings: ["Are you trying to debug?", "Do you feel like giving up?"],
+        typeSpeed: 1
+      });
+  });
+      
+      // function makeTimer() {
+      //   // var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
+      //   // var endTime = new Date("29 April 2020 9:56:00 GMT+01:00");
+      //   var endTime = new Date("20 April 2022 00:00:00");
+      //   endTime = Date.parse(endTime) / 1000;
+      //   var now = new Date();
+      //   now = Date.parse(now) / 1000;
+      //   var timeLeft = endTime - now;
+      //   var days = Math.floor(timeLeft / 86400);
+      //   var hours = Math.floor((timeLeft - days * 86400) / 3600);
+      //   var minutes = Math.floor((timeLeft - days * 86400 - hours * 3600) / 60);
+      //   var seconds = Math.floor(
+      //     timeLeft - days * 86400 - hours * 3600 - minutes * 60
+      //   );
+      //   if (hours < "10") {
+      //     hours = "0" + hours;
+      //   }
+      //   if (minutes < "10") {
+      //     minutes = "0" + minutes;
+      //   }
+      //   if (seconds < "10") {
+      //     seconds = "0" + seconds;
+      //   }
+      //   // $("#days").html(days + '<span style="font-size:0.5em;">Days</span>');
+      //   // $("#hours").html(hours + '<span style="font-size:0.5em;">Hours</span>');
+      //   // $("#minutes").html(
+      //   //   minutes + '<span  style="font-size:0.5em;">Minutes</span>'
+      //   // );
+      //   // $("#seconds").html(
+      //   //   seconds + '<span style="font-size:0.5em;">Seconds</span>'
+      //   // );
+
+      //   document.getElementById("days").innerHTML=days;
+      //   document.getElementById("hours").innerHTML=hours;
+      //   document.getElementById("minutes").innerHTML=minutes;
+      //   document.getElementById("seconds").innerHTML=seconds;
+      // }
+      // setInterval(function () {
+      //   makeTimer();
+      // }, 1000);
     </script>
+
+    
   </head>
   <body>
     <!-- put here content that will not change
@@ -111,8 +127,10 @@
             <div class="buttons">
               <button id="register">Register Now!</button>
               <button id="discord">Join our Discord Server!</button>
-            </div>
-            <div
+            </div> 
+              <span class="entry"></span>
+            
+            <!-- <div
               style="
                 width: fit-content;
                 height: 10vh;
@@ -121,7 +139,7 @@
                 right: 3rem;
               "
             >
-              <span style="font-size: 70%; font-weight: bold"
+              <span style="font-size: 250%; font-weight: bold"
                 >We are going Live in</span
               ><br /><br />
               <div class="dates no-select">
@@ -130,9 +148,46 @@
                   id="seconds"
                 ></span>
               </div>
-            </div>
+            </div> -->
           </section>
-          <section class="about">
+          <section class="timer">
+            <div class="timerd">
+              <div class="heading">
+                WE ARE GOING LIVE IN
+              </div>
+
+              <div class="numbersd">
+                <div class="cont">
+                <div class="days" id="days">32</div>
+                <div class="type">DAYS</div>
+                </div>
+
+                <div class="cont">
+                <div class="days" id="hours">22</div>
+                <div class="type">HOURS</div>
+                </div>
+
+                <div class="cont">
+                <div class="days" id="minutes">38</div>
+                <div class="type">MINUTES</div>
+                </div>
+
+                <div class="cont">
+                <div class="days" id="seconds">37</div>
+                <div class="type">SECONDS</div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+          </section>
+          
+
+          <!-- <section class="about">
+            
             <h1>About</h1>
             <p>
               An apex nucleating institute and globally recognized leader in the
@@ -151,7 +206,28 @@
               editions as every edition strives to take a leap forward in
               redefining and revolutionizing technology.
             </p>
-          </section>
+          </section> -->
+
+          <div class="aboutus">
+            <div class="headers">ABOUT US</div>
+            <div class="msg">
+              An apex nucleating institute and globally recognized leader in the
+              area of Information Technology, Indian Institute of Information
+              Technology Allahabad, established in 1999, strengthens the
+              ingenious capability necessary for harnessing multidimensional
+              facets of IT at all levels. Aparoksha, the annual technical event
+              of IIIT Allahabad has a reach extended far and wide across the
+              country and beyond, and has managed to become one of the largest
+              and most awaited events for technocrats and young innovators to
+              showcase their ingenuity. Be it raging robotics to endless
+              programming and inspirational talks by esteemed keynote speakers
+              to stimulating workshops and exuberant pro-nights filled with
+              laughter and entertainment, Aparoksha has witnessed the pinnacle
+              of awe-striking technological events over the past sixteen
+              editions as every edition strives to take a leap forward in
+              redefining and revolutionizing technology.
+            </div>
+          </div>
         </div>
       </main>
     </div>

@@ -450,7 +450,121 @@ section {
 }
 
 .buttons {
-  margin-top: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#register {
+  margin: 4vh;
+  padding: 2.5vh;
+  font-size: 3vh;
+  border-radius: 1.5vw;
+}
+
+#discord {
+  margin-left: 2vh;
+  padding: 2.5vh;
+  font-size: 3vh;
+  border-radius: 1.5vw;
+}
+
+.days {
+  font-size: 10vh;
+}
+
+.timerd {
+  margin-top: 50vh;
+  text-align: center;
+}
+
+.timerd .heading {
+  text-align: center;
+  font-size: 8vh;
+  font-weight: 700;
+  margin-bottom: 4vh;
+}
+
+.numbersd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.numbersd .cont {
+  display: inline-block;
+}
+
+.aboutus .headers {
+  text-align: center;
+  font-size: 8vh;
+  font-weight: 700;
+}
+
+.msg {
+  margin: 10vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .numbersd {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.entry {
+  font-size: 400%;
+  font-weight: bold;
+  width: auto;
+}
+
+.typed-cursor {
+  opacity: 1;
+  font-size: 300%;
+  -webkit-animation: blink 0.7s infinite;
+          animation: blink 0.7s infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .events {
