@@ -49,6 +49,78 @@
   border-radius: 1.5vw;
 }
 
+.buttonsb {
+  margin-left: 4vw;
+  width: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+#registerb{
+  margin: 4vh;
+  padding: 2.5vh;
+  font-size: 3vh;
+  border-radius: 1.5vw;
+}
+
+#discordb{
+  margin-left: -5vh;
+  padding: 2.5vh;
+  font-size: 3vh;
+  border-radius: 1.5vw;
+}
+
+#herocont{
+ padding-top: 30vh;
+}
+
+.apkheading{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-left: 10vw;
+  height: 20vh;
+  // align-items: center;
+  flex-wrap: wrap;
+  width: 50vw;
+}
+
+.name{
+  font-size: 10vh;
+}
+
+.year{
+  font-size: 5vh;
+}
+
+@media only screen and (max-width: 900px) {
+  .buttonsb{
+    width: 100vw;
+    margin-left: 0px;
+  }
+
+  .apkheading{
+    align-items: center;
+    width: 100vw;
+    margin-left: 0vh;
+  }
+
+  .name{
+    font-size: 15vw;
+  }
+
+  .year{
+    font-size: 8vw;
+  }
+
+  #discordb{
+    margin-left: 0px;
+  }
+}
+
 
 .days{
   font-size: 10vh;
@@ -93,6 +165,7 @@
   }
 }
 
+
 .entry{
   font-size: 400%;
   font-weight: bold;
@@ -116,3 +189,24 @@
   100%
     {opacity: 1}
 }
+
+.footer__text__email {
+  font-size: 1.5rem !important;
+  margin-top: 2vh;
+}
+
+@media only screen and (max-width: 650px) {
+  .footer__text__email {
+    font-size: 1rem !important;
+  }
+
+  .footer__text {
+    margin-right: 5vh !important;
+  }
+
+  
+}
+
+
+
+

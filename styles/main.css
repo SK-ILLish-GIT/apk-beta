@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+.footer__text__email {
+  font-size: 1.5rem;
+}
+
 html,
 body,
 div,
@@ -477,6 +481,89 @@ section {
   border-radius: 1.5vw;
 }
 
+.buttonsb {
+  margin-left: 4vw;
+  width: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#registerb {
+  margin: 4vh;
+  padding: 2.5vh;
+  font-size: 3vh;
+  border-radius: 1.5vw;
+}
+
+#discordb {
+  margin-left: -5vh;
+  padding: 2.5vh;
+  font-size: 3vh;
+  border-radius: 1.5vw;
+}
+
+#herocont {
+  padding-top: 30vh;
+}
+
+.apkheading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10vw;
+  height: 20vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50vw;
+}
+
+.name {
+  font-size: 10vh;
+}
+
+.year {
+  font-size: 5vh;
+}
+
+@media only screen and (max-width: 900px) {
+  .buttonsb {
+    width: 100vw;
+    margin-left: 0px;
+  }
+  .apkheading {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    margin-left: 0vh;
+  }
+  .name {
+    font-size: 15vw;
+  }
+  .year {
+    font-size: 8vw;
+  }
+  #discordb {
+    margin-left: 0px;
+  }
+}
+
 .days {
   font-size: 10vh;
 }
@@ -564,6 +651,20 @@ section {
   }
   100% {
     opacity: 1;
+  }
+}
+
+.footer__text__email {
+  font-size: 1.5rem !important;
+  margin-top: 2vh;
+}
+
+@media only screen and (max-width: 650px) {
+  .footer__text__email {
+    font-size: 1rem !important;
+  }
+  .footer__text {
+    margin-right: 5vh !important;
   }
 }
 
